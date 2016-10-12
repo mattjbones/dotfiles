@@ -18,7 +18,7 @@ syntax on
     \   exe "normal g`\"" |
     \ endif
 
-colorscheme molokai
+colorscheme atom-dark-256
 
 set smartindent
 set tabstop=4
