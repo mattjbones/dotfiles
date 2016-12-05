@@ -6,6 +6,8 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'YankRing.vim'
+Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -18,17 +20,23 @@ syntax on
     \   exe "normal g`\"" |
     \ endif
 
-colorscheme atom-dark-256
+colorscheme molokai
 
 set smartindent
-set tabstop=4
-set shiftwidth=4
-set expandtab
+set tabstop=3       	" how many spaces per tab
+set shiftwidth=3    	" how many space per shif (>)
+set smarttab        	" insert spaces at the next indent
+"set expandtab
 set undofile
 set visualbell
 set wrap
 set textwidth=79
 set formatoptions=qrn1
+"set ruler
+"set list
+
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme='simple'
 
 nnoremap <CR> :noh<CR><CR>
 
