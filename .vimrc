@@ -8,11 +8,15 @@ call vundle#begin()
 Plugin 'YankRing.vim'
 Plugin 'bling/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'maksimr/vim-jsbeautify'
+
 
 call vundle#end()            " required
 filetype plugin indent on    " required
 
 execute pathogen#infect()
+
+map <c-f> :call JsBeautify()<cr>
 
 syntax on
   autocmd BufReadPost *
