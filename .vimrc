@@ -27,8 +27,8 @@ syntax on
 colorscheme molokai
 
 set smartindent
-set tabstop=3       	" how many spaces per tab
-set shiftwidth=3    	" how many space per shif (>)
+set tabstop=2       	" how many spaces per tab
+set shiftwidth=2    	" how many space per shif (>)
 set smarttab        	" insert spaces at the next indent
 "set expandtab
 set undofile
